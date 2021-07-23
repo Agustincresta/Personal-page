@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color1: #eb6a02;
+    --color2: #0b1544;
+    
+}
+
+body{
+    background-color: rgb(233, 232, 232);
+    z-index: 0;
+}
+.activo a{
+   color: var(--color1) !important;
+}
+
+section{
+    padding-top: 40px;
+}
+
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    transition:all 0.5s;
+    padding: 5px 10px;
+
+    
+}
+
+.menu {
+    display: none;
+    
+    font-size: 35px;
+    color: var(--color2);
+    cursor: pointer;
+}
+  
+
+.container{
+    width: 100%;
+    display: inherit;
+    max-width: 1180px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0px  20px;
+
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    font-size: 22px;
+    margin-left: 10px;
+    color: var(--color2);
+    cursor:default;
+}
+
+.logo img{
+    height: 40px;
+    width: auto;
+    
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+ 
+}
+
+.link a{
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 22px;
+   
+}
+.link a:hover{
+    color: var(--color1);
+}
+
+.inicio{
+    height: 100vh;
+    background-color: white;
+    border-bottom: 10px solid var(--color1);
+}
+
+.efecto{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inicio_elementos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.inicio_elementos img{
+    text-align: center;
+    height: 25vh;
+    margin: 0px auto;
+}
+
+.inicio_elementos h1{
+    font-size:60px;
+    margin: 10px auto;
+    color: var(--color2);
+    text-shadow: 1px -1px 0px var(--color2);
+    font-weight: normal;
+    position: relative;
+}
+.inicio_elementos h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: white;
+    font-size: 60px;
+
+    animation: maquina 3s  alternate ;
+    animation-timing-function: linear;
+   
+}
+
+.inicio_elementos h3{
+    font-size:28px;
+    color: var(--color2);
+ 
+}
+.sobre_mi{
+    border-top:5px solid var(--color1);
+}
+
+.sm_elementos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre_mi h2{
+    font-size:30px;
+    margin: 10px auto;
+    color: var(--color1);
+    width: 100%;
+    text-align: center;
+
+}
+
+.informacion{
+    width: 50%;
+}
+
+.informacion h3{
+    color: var(--color1);
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+
+    
+}
+
+.informacion p{
+    color: rgb(34, 32, 32);
+    padding: 10px;
+    line-height: 35px;
+}
+
+.habilidades{
+    width: 50%;
+
+}
+
+.habilidades ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.habilidades h3{
+    color: var(--color1);
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.habilidades ul{
+list-style: none;
+}
+
+.habilidad{
+    width: 21%;
+    
+}
+
+.habilidad img{
+    width: 100%;
+    padding: 25%;
+    overflow: hidden;
+    transition: all 0.3s;
+    filter: brightness(0%);
+}
+
+.habilidad img:hover{
+    filter: brightness(100%);
+}
+
+.habilidad p{
+    opacity: 0;
+    text-align: center;
+}
+
+.habilidad:hover p{
+    opacity: 0.5;
+}
+
+
+
+.ptitulo{
+    font-size:30px;
+    margin: 10px auto;
+    color: var(--color2);
+    width: 100%;
+    text-align: center;
+
+}
+
+.psubtitulo{
+    color: var(--color2);
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+  
+.proyecto {
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    width: 30%;
+    margin: 1.5%;
+    
+    box-shadow:0px 0px 6px  rgb(88, 88, 88);
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1s;
+}
+
+.contenido {
+    padding: 50px;
+    position: absolute;
+    background-color: #000000a1;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+
+.proyecto:hover .contenido {
+    visibility: visible;
+    opacity: 1;
+}
+
+.proyecto:hover .img {
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.ct {
+    color: var(--color1);
+
+}
+
+.text {
+    margin: 20px 0;
+}
+
+.botones {
+    display: flex;
+}
+
+.boton {
+    text-decoration: none;
+    background: white;
+    color: var(--color1);
+    padding: 5px 10px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+    min-width: 50px;
+}
+
+.boton:hover {
+    color: var(--color2) !important;
+    border-color: var(--color1) !important;
+}
+
+.c_elemento{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto h2{
+    font-size:30px;
+    margin: 10px auto;
+    color: var(--color1);
+    width: 100%;
+    text-align: center;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.iconos{
+    display: flex;
+    
+    justify-content: space-around;
+    width: 30%;
+    padding: 0px 20px;
+    margin: 0 auto;
+
+    border-radius: 5px;
+
+}
+
+.iconos i{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: var(--color1);
+    transition: all 0.5s;
+    font-size: 5vh;
+    cursor: pointer;
+}
+
+.iconos i:hover{
+    color: var(--color2);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.formulario label{
+    margin-bottom: 5px;
+    color: var(--color1);
+    font-size: 20px;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.formulario input,
+.formulario textarea{
+    border: 1px solid var(--color1);
+    margin-bottom: 10px;
+    max-height: 500px;
+    resize: vertical;
+    padding: 5px;
+    border-radius: 5px;
+    animation-name: borde;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+} 
+
+footer{
+    animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes anim{
+    0%{color: var(--color1) ;}
+    25%{color: var(--color1);}
+    50%{color: var(--color2);}
+    75%{color: var(--color2);}
+    100%{color: var(--color1);}
+}
+
+
+
+
+@keyframes borde{
+    0%{border-color: var(--color1) ;color: var(--color1) ;}
+    25%{border-color: var(--color1) ;color: var(--color1) ;}
+    50%{border-color: var(--color2);color: var(--color2) ;}
+    75%{border-color: var(--color2);color: var(--color2) ;}
+    100%{border-color: var(--color1);color: var(--color1) ;}
+}
+
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+

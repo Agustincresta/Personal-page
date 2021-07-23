@@ -1,0 +1,104 @@
+@media (max-width: 991px) {
+    .menu {
+      display: flex;
+    }
+  
+    .links {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.952);
+      font-size: 30px;
+      z-index: 10;
+      transform: translateX(100%);
+      opacity: 0;
+      transition: all 0.5s;
+      margin: 0 -30px;
+    }
+  
+    .visible {
+      display: flex;
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  
+    .link {
+      padding-left: 0px;
+      margin-top: 30px;
+    }
+
+    .inicio {
+      flex-direction: column;
+    }
+  
+    .logo {
+      margin-right: 0;
+    }
+  
+    .inicio_elementos h1 {
+      font-size: 45px;
+    }
+    .inicio_elementos h1 span{
+        font-size: 45px;
+    }
+    
+    .inicio_elementos h3 {
+     
+        font-size: 20px;
+    }
+
+    .informacion{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .habilidades{
+        width: 85%;
+        margin: 0px auto;
+    }
+
+    .proyecto{
+        width: 47%;
+    } 
+
+    .iconos i{
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .habilidad{
+        width: 30%;
+    }
+    .proyecto{
+        width: 100%;
+        margin-bottom: 10px;
+    } 
+
+    .iconos {
+        width: 50%;
+    }
+
+    .formulario{
+        width:80%;
+    }
+  }
+
+  @media (max-width: 405px){
+    .inicio_elementos h1 {
+      font-size: 35px;
+    }
+    .inicio_elementos h1 span{
+        font-size: 35px;
+    }
+
+    .informacion p{
+      padding: 5px;
+      text-align: center;
+    }
+    
+
+  }
